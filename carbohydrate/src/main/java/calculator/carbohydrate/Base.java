@@ -43,6 +43,7 @@ public class Base {
 			driver.manage().deleteAllCookies();
 			driver.manage().window().maximize();
 			
+			
 		}
 		else {
 			System.out.print("Setup the name of the broswer in the property file");

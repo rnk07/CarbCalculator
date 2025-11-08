@@ -84,14 +84,26 @@ public class calculatorPageObject {
 		 return driver.findElement(submitBtn);
 	 }
 	 
+	
 	 
+	 private By otherUnitBtn  = By.xpath("//a[text()='Other Units']");
+	 public WebElement otherUnitBtn() {
+		 return driver.findElement(otherUnitBtn);
+	 }
 	 
+	 private By converterFrame  = By.cssSelector("iframe[src*='converter']");
+	 public WebElement converterFrame() {
+		 return driver.findElement(converterFrame);
+	 }
+	
+			 private By converterHeading  = By.xpath("//div[contains(text(),'converter')]");
+	 public WebElement converterHeading() {
+		 return driver.findElement(converterHeading);
+	 }
 	 
-	 
-	 
-	 
-	 
-	 
-	 
+	 private By lengthBtn  = By.cssSelector("a[href *='Length']");
+	 public WebElement lengthBtn() {
+		 return driver.findElement(lengthBtn);
+	 }
 	 
 }
