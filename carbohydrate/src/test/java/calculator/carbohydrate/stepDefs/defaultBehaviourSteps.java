@@ -3,6 +3,8 @@ package calculator.carbohydrate.stepDefs;
 
 
 import java.time.Duration;
+import java.util.Iterator;
+import java.util.Set;
 
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
@@ -132,6 +134,10 @@ public class defaultBehaviourSteps extends Base	 {
 	public void verify_body_fat_has_by_default_value() {
 		String actualValue = cp.fatField().getAttribute("value");
 	    Assert.assertEquals(actualValue, "20");
+	    
+	    
+	   
+	
 	}
 	
 	
