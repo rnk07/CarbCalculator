@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Carb Calculator]" guice-stage="DEVELOPMENT" verbose="0">
+  <test thread-count="5" name="Functional Test(failed)" verbose="0">
+    <classes>
+      <class name="calculator.carbohydrate.runner.calculatorRunner">
+        <methods>
+          <include name="setUpClass"/>
+          <include name="tearDownClass"/>
+          <include name="runScenario" invocation-numbers="3"/>
+        </methods>
+      </class> <!-- calculator.carbohydrate.runner.calculatorRunner -->
+    </classes>
+  </test> <!-- Functional Test(failed) -->
+</suite> <!-- Failed suite [Carb Calculator] -->
