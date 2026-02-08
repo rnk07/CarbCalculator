@@ -17,4 +17,3 @@ Scenario: Verify the form if showing default value or not upon landing.
 	And click on Setting 
 	And verify St jeror BMR calculaiton is selected
 	And verify body fat has by default value
-	

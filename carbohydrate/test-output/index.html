@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -39,7 +39,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Carb_Calculator" class="navigator-link">
-              <span class="suite-name border-passed">Carb Calculator</span>
+              <span class="suite-name border-failed">Carb Calculator</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -50,7 +50,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Carb_Calculator" class="navigator-link ">
-                    <span>C:\Users\patel\eclipse-workspace\carbohydrate\test.xml</span>
+                    <span>C:\Users\patel\git\CarbCalculator\carbohydrate\test.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -92,7 +92,26 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">3 methods,   3 passed</span>
+                    <span class="method-stats">4 methods, 2 failed,   2 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Carb_Calculator" class="hide-methods failed suite-Carb_Calculator"> (hide)</a> <!-- hide-methods failed suite-Carb_Calculator -->
+                      <a href="#" panel-name="suite-Carb_Calculator" class="show-methods failed suite-Carb_Calculator"> (show)</a> <!-- show-methods failed suite-Carb_Calculator -->
+                    </span>
+                    <div class="method-list-content failed suite-Carb_Calculator">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Carb_Calculator" title="calculator.carbohydrate.runner.calculatorRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Verify if system shows an error for invalid inputs&quot;, &quot;Validate system shows an error for invalid in...)">runScenario("Verify if system shows an error for invalid inputs", "Validate system shows an error for invalid in...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Carb_Calculator" title="calculator.carbohydrate.runner.calculatorRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Verify the carbohydrate calculatoe is opening&quot;, &quot;Validate bydefault behaviour Carbohydrate Calculat...)">runScenario("Verify the carbohydrate calculatoe is opening", "Validate bydefault behaviour Carbohydrate Calculat...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Carb_Calculator -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -103,17 +122,12 @@
                     <div class="method-list-content passed suite-Carb_Calculator">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Carb_Calculator" title="calculator.carbohydrate.runner.calculatorRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Verify if system shows an error for invalid inputs&quot;, &quot;Validate system shows an error for invalid in...)">runScenario("Verify if system shows an error for invalid inputs", "Validate system shows an error for invalid in...)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Carb_Calculator" title="calculator.carbohydrate.runner.calculatorRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Verify the carbohydrate calculatoe is opening&quot;, &quot;Validate bydefault behaviour Carbohydrate Calculat...)">runScenario("Verify the carbohydrate calculatoe is opening", "Validate bydefault behaviour Carbohydrate Calculat...)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Carb_Calculator" title="calculator.carbohydrate.runner.calculatorRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Verify the form if showing default value or not upon landing.&quot;, &quot;Validate bydefault behaviour Carbo...)">runScenario("Verify the form if showing default value or not upon landing.", "Validate bydefault behaviour Carbo...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Carb_Calculator" title="calculator.carbohydrate.runner.calculatorRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Verify system shows unit convertor window or Metric Unit&quot;, &quot;Verify Unit Conversion Feature&quot;)">runScenario("Verify system shows unit convertor window or Metric Unit", "Verify Unit Conversion Feature")</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Carb_Calculator -->
@@ -128,9 +142,9 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Carb_Calculator" class="panel Carb_Calculator">
-          <div class="suite-Carb_Calculator-class-passed">
+          <div class="suite-Carb_Calculator-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
+              <img src="failed.png"/>
               <span class="class-name">calculator.carbohydrate.runner.calculatorRunner</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -140,6 +154,30 @@
                   </a> <!-- runScenario("Verify if system shows an error for invalid inputs", "Validate system shows an error for invalid in...) -->
                   <span class="method-name">runScenario</span>
                   <span class="parameters">("Verify if system shows an error for invalid inputs","Validate system shows an error for invalid input")</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: Unable to locate element: //h1s
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.22.0&apos;, revision: &apos;c5f3146703*&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.8&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [9b1894b8-e18b-41f1-97ba-9170d025ff5b, findElement {value=//h1s, using=xpath}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 144.0.2, moz:accessibilityChecks: false, moz:buildID: 20251027123126, moz:geckodriverVersion: 0.36.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 2536, moz:profile: C:\Users\patel\AppData\Loca..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Session ID: 9b1894b8-e18b-41f1-97ba-9170d025ff5b
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
+	at calculator.carbohydrate.objects.calculatorPageObject.headerValidation(calculatorPageObject.java:20)
+	at calculator.carbohydrate.stepDefs.errorValidationSteps.click_on_calculate_button(errorValidationSteps.java:40)
+	at ✽.Click on calculate button(file:///C:/Users/patel/git/CarbCalculator/carbohydrate/src/test/resources/featureFile/errorValidationForInvalidInput.feature:9)
+... Removed 3 stack frames
+</div> <!-- stack-trace -->
                   <em>
 (Runs Cucumber Scenarios)                  </em>
                 </div> <!-- method-content -->
@@ -150,10 +188,42 @@
                   </a> <!-- runScenario("Verify the carbohydrate calculatoe is opening", "Validate bydefault behaviour Carbohydrate Calculat...) -->
                   <span class="method-name">runScenario</span>
                   <span class="parameters">("Verify the carbohydrate calculatoe is opening","Validate bydefault behaviour Carbohydrate Calculator Site")</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: Unable to locate element: //h1s
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.22.0&apos;, revision: &apos;c5f3146703*&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.8&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [57fb9dfb-080d-46a3-99b5-3334f27cdf49, findElement {value=//h1s, using=xpath}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 144.0.2, moz:accessibilityChecks: false, moz:buildID: 20251027123126, moz:geckodriverVersion: 0.36.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 22104, moz:profile: C:\Users\patel\AppData\Loca..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Session ID: 57fb9dfb-080d-46a3-99b5-3334f27cdf49
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
+	at calculator.carbohydrate.objects.calculatorPageObject.headerValidation(calculatorPageObject.java:20)
+	at calculator.carbohydrate.stepDefs.defaultBehaviourSteps.system_display_application(defaultBehaviourSteps.java:35)
+	at ✽.system display application(file:///C:/Users/patel/git/CarbCalculator/carbohydrate/src/test/resources/featureFile/defaultBehaviourValidation.feature:7)
+... Removed 3 stack frames
+</div> <!-- stack-trace -->
                   <em>
 (Runs Cucumber Scenarios)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Carb_Calculator-class-failed -->
+          <div class="suite-Carb_Calculator-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">calculator.carbohydrate.runner.calculatorRunner</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
                   <a name="runScenario(&quot;Verify the form if showing default value or not upon landing.&quot;, &quot;Validate bydefault behaviour Carbo...)">
@@ -164,12 +234,22 @@
 (Runs Cucumber Scenarios)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Verify system shows unit convertor window or Metric Unit&quot;, &quot;Verify Unit Conversion Feature&quot;)">
+                  </a> <!-- runScenario("Verify system shows unit convertor window or Metric Unit", "Verify Unit Conversion Feature") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Verify system shows unit convertor window or Metric Unit","Verify Unit Conversion Feature")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-Carb_Calculator-class-passed -->
         </div> <!-- panel Carb_Calculator -->
         <div panel-name="test-xml-Carb_Calculator" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\patel\eclipse-workspace\carbohydrate\test.xml</span>
+            <span class="header-content">C:\Users\patel\git\CarbCalculator\carbohydrate\test.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -226,24 +306,28 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(3);
+data.addRows(4);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'runScenario')
 data.setCell(0, 2, 'calculator.carbohydrate.runner.calculatorRunner')
-data.setCell(0, 3, 9853);
+data.setCell(0, 3, 27354);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'runScenario')
 data.setCell(1, 2, 'calculator.carbohydrate.runner.calculatorRunner')
-data.setCell(1, 3, 8856);
+data.setCell(1, 3, 24804);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'runScenario')
 data.setCell(2, 2, 'calculator.carbohydrate.runner.calculatorRunner')
-data.setCell(2, 3, 8707);
+data.setCell(2, 3, 9821);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'runScenario')
+data.setCell(3, 2, 'calculator.carbohydrate.runner.calculatorRunner')
+data.setCell(3, 3, 8702);
 window.suiteTableData['Carb_Calculator']= { tableData: data, tableDiv: 'times-div-Carb_Calculator'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 27 seconds</span>
+              <span class="suite-total-time">Total running time: 1 minutes</span>
               <div id="times-div-Carb_Calculator">
               </div> <!-- times-div-Carb_Calculator -->
             </div> <!-- times-div -->
@@ -271,24 +355,32 @@ return data;
             <div class="chronological-class">
               <div class="chronological-class-name">calculator.carbohydrate.runner.calculatorRunner</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
-                <span class="method-name">setUpClass(org.testng.TestRunner@64e7d698)</span>
+                <span class="method-name">setUpClass(org.testng.TestRunner@3fdcde7a)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">runScenario("Verify the carbohydrate calculatoe is opening", "Validate bydefault behaviour Carbohydrate Calculat...)</span>
-                <span class="method-start">1179 ms</span>
+                <span class="method-start">1281 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">runScenario("Verify the form if showing default value or not upon landing.", "Validate bydefault behaviour Carbo...)</span>
-                <span class="method-start">9891 ms</span>
+                <span class="method-start">28641 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">runScenario("Verify if system shows an error for invalid inputs", "Validate system shows an error for invalid in...)</span>
-                <span class="method-start">18753 ms</span>
+                <span class="method-start">38465 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Verify system shows unit convertor window or Metric Unit", "Verify Unit Conversion Feature")</span>
+                <span class="method-start">63272 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDownClass</span>
-                <span class="method-start">28612 ms</span>
+                <span class="method-start">71981 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

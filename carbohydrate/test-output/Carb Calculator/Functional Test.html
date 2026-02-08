@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Functional Test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>3/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>2/2/0</td>
 </tr><tr>
-<td>Started on:</td><td>Tue Nov 04 18:31:41 EST 2025</td>
+<td>Started on:</td><td>Sun Nov 09 13:23:25 EST 2025</td>
 </tr>
-<tr><td>Total time:</td><td>29 seconds (29347 ms)</td>
+<tr><td>Total time:</td><td>72 seconds (72812 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,6 +67,121 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='calculator.carbohydrate.runner.calculatorRunner.runScenario()'><b>runScenario</b><br>Test class: calculator.carbohydrate.runner.calculatorRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify if system shows an error for invalid inputs", "Validate system shows an error for invalid input"</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: //h1s
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.22.0&apos;, revision: &apos;c5f3146703*&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.8&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [9b1894b8-e18b-41f1-97ba-9170d025ff5b, findElement {value=//h1s, using=xpath}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 144.0.2, moz:accessibilityChecks: false, moz:buildID: 20251027123126, moz:geckodriverVersion: 0.36.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 2536, moz:profile: C:\Users\patel\AppData\Loca..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Session ID: 9b1894b8-e18b-41f1-97ba-9170d025ff5b
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
+	at calculator.carbohydrate.objects.calculatorPageObject.headerValidation(calculatorPageObject.java:20)
+	at calculator.carbohydrate.stepDefs.errorValidationSteps.click_on_calculate_button(errorValidationSteps.java:40)
+	at ✽.Click on calculate button(file:///C:/Users/patel/git/CarbCalculator/carbohydrate/src/test/resources/featureFile/errorValidationForInvalidInput.feature:9)
+... Removed 3 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1322559460", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1322559460'><pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: //h1s
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.22.0&apos;, revision: &apos;c5f3146703*&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.8&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [9b1894b8-e18b-41f1-97ba-9170d025ff5b, findElement {value=//h1s, using=xpath}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 144.0.2, moz:accessibilityChecks: false, moz:buildID: 20251027123126, moz:geckodriverVersion: 0.36.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 2536, moz:profile: C:\Users\patel\AppData\Loca..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Session ID: 9b1894b8-e18b-41f1-97ba-9170d025ff5b
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
+	at calculator.carbohydrate.objects.calculatorPageObject.headerValidation(calculatorPageObject.java:20)
+	at calculator.carbohydrate.stepDefs.errorValidationSteps.click_on_calculate_button(errorValidationSteps.java:40)
+	at ✽.Click on calculate button(file:///C:/Users/patel/git/CarbCalculator/carbohydrate/src/test/resources/featureFile/errorValidationForInvalidInput.feature:9)
+</pre></div></td>
+<td>24</td>
+<td>calculator.carbohydrate.runner.calculatorRunner@55fe41ea</td></tr>
+<tr>
+<td title='calculator.carbohydrate.runner.calculatorRunner.runScenario()'><b>runScenario</b><br>Test class: calculator.carbohydrate.runner.calculatorRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify the carbohydrate calculatoe is opening", "Validate bydefault behaviour Carbohydrate Calculator Site"</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: //h1s
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.22.0&apos;, revision: &apos;c5f3146703*&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.8&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [57fb9dfb-080d-46a3-99b5-3334f27cdf49, findElement {value=//h1s, using=xpath}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 144.0.2, moz:accessibilityChecks: false, moz:buildID: 20251027123126, moz:geckodriverVersion: 0.36.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 22104, moz:profile: C:\Users\patel\AppData\Loca..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Session ID: 57fb9dfb-080d-46a3-99b5-3334f27cdf49
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
+	at calculator.carbohydrate.objects.calculatorPageObject.headerValidation(calculatorPageObject.java:20)
+	at calculator.carbohydrate.stepDefs.defaultBehaviourSteps.system_display_application(defaultBehaviourSteps.java:35)
+	at ✽.system display application(file:///C:/Users/patel/git/CarbCalculator/carbohydrate/src/test/resources/featureFile/defaultBehaviourValidation.feature:7)
+... Removed 3 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace354154358", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace354154358'><pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: //h1s
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.22.0&apos;, revision: &apos;c5f3146703*&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.8&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [57fb9dfb-080d-46a3-99b5-3334f27cdf49, findElement {value=//h1s, using=xpath}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 144.0.2, moz:accessibilityChecks: false, moz:buildID: 20251027123126, moz:geckodriverVersion: 0.36.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 22104, moz:profile: C:\Users\patel\AppData\Loca..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Session ID: 57fb9dfb-080d-46a3-99b5-3334f27cdf49
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
+	at calculator.carbohydrate.objects.calculatorPageObject.headerValidation(calculatorPageObject.java:20)
+	at calculator.carbohydrate.stepDefs.defaultBehaviourSteps.system_display_application(defaultBehaviourSteps.java:35)
+	at ✽.system display application(file:///C:/Users/patel/git/CarbCalculator/carbohydrate/src/test/resources/featureFile/defaultBehaviourValidation.feature:7)
+</pre></div></td>
+<td>27</td>
+<td>calculator.carbohydrate.runner.calculatorRunner@55fe41ea</td></tr>
+</table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
@@ -76,17 +191,12 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='calculator.carbohydrate.runner.calculatorRunner.runScenario()'><b>runScenario</b><br>Test class: calculator.carbohydrate.runner.calculatorRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify if system shows an error for invalid inputs", "Validate system shows an error for invalid input"</td>
+<td title='calculator.carbohydrate.runner.calculatorRunner.runScenario()'><b>runScenario</b><br>Test class: calculator.carbohydrate.runner.calculatorRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify the form if showing default value or not upon landing.", "Validate bydefault behaviour Carbohydrate Calculator Site"</td>
 <td></td>
 <td>9</td>
 <td>calculator.carbohydrate.runner.calculatorRunner@55fe41ea</td></tr>
 <tr>
-<td title='calculator.carbohydrate.runner.calculatorRunner.runScenario()'><b>runScenario</b><br>Test class: calculator.carbohydrate.runner.calculatorRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify the carbohydrate calculatoe is opening", "Validate bydefault behaviour Carbohydrate Calculator Site"</td>
-<td></td>
-<td>8</td>
-<td>calculator.carbohydrate.runner.calculatorRunner@55fe41ea</td></tr>
-<tr>
-<td title='calculator.carbohydrate.runner.calculatorRunner.runScenario()'><b>runScenario</b><br>Test class: calculator.carbohydrate.runner.calculatorRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify the form if showing default value or not upon landing.", "Validate bydefault behaviour Carbohydrate Calculator Site"</td>
+<td title='calculator.carbohydrate.runner.calculatorRunner.runScenario()'><b>runScenario</b><br>Test class: calculator.carbohydrate.runner.calculatorRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify system shows unit convertor window or Metric Unit", "Verify Unit Conversion Feature"</td>
 <td></td>
 <td>8</td>
 <td>calculator.carbohydrate.runner.calculatorRunner@55fe41ea</td></tr>
