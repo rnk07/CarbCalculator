@@ -1,7 +1,9 @@
 package calculator.carbohydrate.runner;
 
+import java.io.File;
 import java.io.IOException;
 
+import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 
@@ -34,12 +36,16 @@ public class Hooks {
 	@AfterStep
 	public void addScreenshot(Scenario scenario) throws IOException {
 
+		TakesScreenshot screenshot = (TakesScreenshot)Base.driver;
 		// capture screenshot on validate if scenario has failed
 		if (scenario.isFailed()) {
-			final byte[] screenshot = ((TakesScreenshot) Base.driver).getScreenshotAs(OutputType.BYTES);
-			scenario.attach(screenshot, "image/png", "image");
+			final byte[] image = screenshot.getScreenshotAs(OutputType.BYTES);
+			scenario.attach(image, "image/png", "image");
 						}
 
+
+		
+		
 		}
 
 }

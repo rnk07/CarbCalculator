@@ -9,12 +9,57 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">Carb Calculator</th></tr>
-<tr><td><a href="#t0">Functional Test</a></td><td class="num">3</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">29,347</td><td></td><td></td></tr>
+<tr><td><a href="#t0">Functional Test</a></td><td class="num">2</td><td class="num">0</td><td class="num">0</td><td class="num attn">2</td><td class="num">72,812</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Carb Calculator</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Functional Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="3">calculator.carbohydrate.runner.calculatorRunner</td><td><a href="#m0">runScenario</a></td><td rowspan="3">1762299120153</td><td rowspan="3">9853</td></tr><tr class="passedeven"><td><a href="#m1">runScenario</a></td></tr><tr class="passedeven"><td><a href="#m2">runScenario</a></td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Carb Calculator</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Functional Test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="2">calculator.carbohydrate.runner.calculatorRunner</td><td><a href="#m0">runScenario</a></td><td rowspan="2">1762712644382</td><td rowspan="2">24804</td></tr><tr class="failedeven"><td><a href="#m1">runScenario</a></td></tr><tr><th colspan="4">Functional Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="2">calculator.carbohydrate.runner.calculatorRunner</td><td><a href="#m2">runScenario</a></td><td rowspan="2">1762712634558</td><td rowspan="2">9821</td></tr><tr class="passedeven"><td><a href="#m3">runScenario</a></td></tr></tbody>
 </table>
-<h2>Functional Test</h2><h3 id="m0">calculator.carbohydrate.runner.calculatorRunner#runScenario</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>&quot;Verify if system shows an error for invalid inputs&quot;</td><td>&quot;Validate system shows an error for invalid input&quot;</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">calculator.carbohydrate.runner.calculatorRunner#runScenario</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>&quot;Verify the carbohydrate calculatoe is opening&quot;</td><td>&quot;Validate bydefault behaviour Carbohydrate Calculator Site&quot;</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Functional Test</h2><h3 id="m0">calculator.carbohydrate.runner.calculatorRunner#runScenario</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>&quot;Verify if system shows an error for invalid inputs&quot;</td><td>&quot;Validate system shows an error for invalid input&quot;</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">org.openqa.selenium.NoSuchElementException: Unable to locate element: //h1s
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.22.0&apos;, revision: &apos;c5f3146703*&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.8&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [9b1894b8-e18b-41f1-97ba-9170d025ff5b, findElement {value=//h1s, using=xpath}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 144.0.2, moz:accessibilityChecks: false, moz:buildID: 20251027123126, moz:geckodriverVersion: 0.36.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 2536, moz:profile: C:\Users\patel\AppData\Loca..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Session ID: 9b1894b8-e18b-41f1-97ba-9170d025ff5b
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
+	at calculator.carbohydrate.objects.calculatorPageObject.headerValidation(calculatorPageObject.java:20)
+	at calculator.carbohydrate.stepDefs.errorValidationSteps.click_on_calculate_button(errorValidationSteps.java:40)
+	at ✽.Click on calculate button(file:///C:/Users/patel/git/CarbCalculator/carbohydrate/src/test/resources/featureFile/errorValidationForInvalidInput.feature:9)
+... Removed 3 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">calculator.carbohydrate.runner.calculatorRunner#runScenario</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>&quot;Verify the carbohydrate calculatoe is opening&quot;</td><td>&quot;Validate bydefault behaviour Carbohydrate Calculator Site&quot;</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">org.openqa.selenium.NoSuchElementException: Unable to locate element: //h1s
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.22.0&apos;, revision: &apos;c5f3146703*&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.8&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [57fb9dfb-080d-46a3-99b5-3334f27cdf49, findElement {value=//h1s, using=xpath}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 144.0.2, moz:accessibilityChecks: false, moz:buildID: 20251027123126, moz:geckodriverVersion: 0.36.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 22104, moz:profile: C:\Users\patel\AppData\Loca..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Session ID: 57fb9dfb-080d-46a3-99b5-3334f27cdf49
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
+	at calculator.carbohydrate.objects.calculatorPageObject.headerValidation(calculatorPageObject.java:20)
+	at calculator.carbohydrate.stepDefs.defaultBehaviourSteps.system_display_application(defaultBehaviourSteps.java:35)
+	at ✽.system display application(file:///C:/Users/patel/git/CarbCalculator/carbohydrate/src/test/resources/featureFile/defaultBehaviourValidation.feature:7)
+... Removed 3 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 <h3 id="m2">calculator.carbohydrate.runner.calculatorRunner#runScenario</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>&quot;Verify the form if showing default value or not upon landing.&quot;</td><td>&quot;Validate bydefault behaviour Carbohydrate Calculator Site&quot;</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">calculator.carbohydrate.runner.calculatorRunner#runScenario</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>&quot;Verify system shows unit convertor window or Metric Unit&quot;</td><td>&quot;Verify Unit Conversion Feature&quot;</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

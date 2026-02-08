@@ -4,6 +4,7 @@ import java.time.Duration;
 import java.util.Iterator;
 import java.util.Set;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
@@ -46,9 +47,40 @@ public class unitConversionValidationSteps extends Base {
 //		    driver.switchTo().window(childId);
 		
 		
+		
+		 driver.findElement(By.id("IdName"));
+		 driver.findElement(By.name("Name"));
+		 driver.findElement(By.className("ClassName"));
+		 driver.findElement(By.tagName("tagName"));
+		 driver.findElement(By.linkText("linkText"));
+		 driver.findElement(By.partialLinkText("partialLink"));
+		 driver.findElement(By.cssSelector("tag#id"));
+		 driver.findElement(By.cssSelector("tag.class"));
+		 driver.findElement((By.cssSelector("tag[attribute =value]")));
+		 driver.findElement((By.cssSelector("tag.classSelecotr[attribut=value]")));
+		 
+		 
+		driver.findElement(By.xpath("xpath"));
+		driver.findElement((By.xpath("//*[@id='email']")));
+		driver.findElement(By.xpath("//tag[@attriName='value']"));
+		
+		
+		driver.findElement(By.xpath("//*[contains(@atriName,'value')]"));
+		//  "//input[contains(@id,'email')]"
+		
+		driver.findElement((By.xpath("//tagName[text()='text']")));
+		
+		// "//tagName[@id='text']/following:: nextSyntex"
+
+		
+		
+		
+		
+		
+		
 	}
 
-	
+		
 	
 	
 	
